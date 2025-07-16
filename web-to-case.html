@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Submit a Case - Support Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .tabs {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    .tab {
+      padding: 10px 20px;
+      margin-right: 10px;
+      cursor: pointer;
+      background-color: #eee;
+      border-radius: 5px 5px 0 0;
+      text-decoration: none;
+      color: black;
+    }
+    .tab.active {
+      background-color: #ddd;
+      font-weight: bold;
+    }
+    input, textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 300px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Tabs -->
+  <div class="tabs">
+    <a href="index.html" class="tab">Home</a>
+    <a href="web-to-case.html" class="tab active">Submit Case</a>
+  </div>
+
+  <h2>Submit a Support Case</h2>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+    <input type="hidden" name="orgid" value="00DgP0000000czl">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required>
+
+    <label for="subject">Subject:</label>
+    <input type="text" name="subject" required>
+
+    <label for="description">Description:</label>
+    <textarea name="description" required></textarea>
+
+    <input type="submit" value="Submit Case">
+  </form>
+</body>
+</html>
