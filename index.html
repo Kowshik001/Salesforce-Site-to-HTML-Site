@@ -38,6 +38,27 @@
 
   <h2>Welcome to Our Support Portal</h2>
   <p>Click the chat button to speak with an agent.</p>
+
+
+<script type='text/javascript'>
+  function initEmbeddedMessaging() {
+    try {
+      embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+      embeddedservice_bootstrap.init(
+        '00DHs00000TTGXG',
+        'HealthBridge',
+        'https://wi1778260356875.my.site.com/ESWHealthBridge1784701565674',
+        {
+          scrt2URL: 'https://wi1778260356875.my.salesforce-scrt.com'
+        }
+      );
+    } catch (err) {
+      console.error('Error loading Embedded Messaging: ', err);
+    }
+  };
+</script>
+<script type='text/javascript' src='https://wi1778260356875.my.site.com/ESWHealthBridge1784701565674/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+  
 	<!-- Embeded Chat-->
 <!-- <script type='text/javascript'>
 	function initEmbeddedMessaging() {
@@ -60,7 +81,7 @@
 <script type='text/javascript' src='https://first-source--di1.sandbox.my.site.com/ESWWebDeployment21745826054038/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script> -->
 
 	<!-- Agent Force -->
-	<script type='text/javascript'>
+	<!--<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
@@ -78,7 +99,7 @@
 		}
 	};
 </script>
-<script type='text/javascript' src='https://wi1779717974753.my.site.com/ESWMessagingforAgent1780106185553/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://wi1779717974753.my.site.com/ESWMessagingforAgent1780106185553/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>-->
 <!-- <script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
